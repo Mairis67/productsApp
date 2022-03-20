@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Products List</title>
+</head>
+<body>
+
+<header>
+    <h3>Product List</h3>
+    <nav>
+        <a class="add-btn" href="products/add"><button type="submit">Add</button></a>
+        <button id="delete-product-btn" type="submit">MASS DELETE</button>
+    </nav>
+</header>
+<hr>
+
+{% for dvd in dvds %}
+<input type="checkbox" class="delete-checkbox" name="delete-checkbox">
+<ul>
+    <li>
+        {{ dvd.sku }}
+    </li>
+    <li>
+        {{ dvd.name }}
+    </li>
+    <li>
+        {{ dvd.price }} $
+    </li>
+    <li>
+        Size: {{ dvd.size }} MB
+    </li>
+</ul>
+<br><br>
+{% endfor %}
+
+<footer class="footer">
+    <h5>Scandiweb Test assignment</h5>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>

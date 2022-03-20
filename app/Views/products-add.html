@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Products Add</title>
+</head>
+<body>
+<header>
+    <h3>Product Add</h3>
+    <nav>
+        <button class="save-btn" type="submit" form="product_form">Save</button>
+        <button class="cancel-btn" type="submit" form="product_form">Cancel</button>
+    </nav>
+</header>
+<hr>
+
+<form action="/" method="post" id="product_form">
+    <div>
+        <label for="sku">SKU</label>
+        <input type="text" id="sku" name="sku">
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price">
+    </div>
+
+<!--    <form action="/prodcts">-->
+        <label for="productType">Type Switcher</label>
+        <select name="type" id="productType" onchange="productChange(this)">
+            <option value="other" selected>Type Switcher</option>
+            <option value="dvd">DVD</option>
+            <option value="book">Book</option>
+            <option value="furniture">Furniture</option>
+        </select>
+<!--    </form>-->
+
+    <div id="DVD">
+        <label for="size">Size (MB)</label>
+        <input list="dvd" type="text" id="size" name="size">
+    </div>
+    <div id="Book">
+        <label for="weight">Weight (KG)</label>
+        <input list="book" type="text" id="weight" name="weight">
+    </div>
+    <div id="Furniture">
+        <label for="height">Height (CM)</label>
+        <input list="furniture" type="text" id="height" name="height">
+        <br>
+        <label for="width">Width (CM)</label>
+        <input list="furniture" type="text" id="width" name="width">
+        <br>
+        <label for="length">Length (CM)</label>
+        <input list="furniture" type="text" id="length" name="length">
+    </div>
+</form>
+<br><br>
+
+<footer class="footer">
+    <h5>Scandiweb Test assignment</h5>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>
