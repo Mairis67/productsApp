@@ -14,7 +14,7 @@ class Database
             $connectionParams = [
                 'dbname' => 'products',
                 'user' => 'mairis',
-                'password' => 'Codelex123mySql!',
+                'password' => '',
                 'host' => 'localhost',
                 'driver' => 'pdo_mysql'
             ];
