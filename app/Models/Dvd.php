@@ -7,10 +7,10 @@ class Dvd
     private string $sku;
     private string $name;
     private int $price;
-    private int $size;
     private int $id;
+    private int $size;
 
-    public function __construct(string $sku, string $name, int $price, int $size, int $id)
+    public function __construct(string $sku, string $name, int $price, int $id, int $size)
     {
         $this->sku = $sku;
         $this->name = $name;
@@ -34,14 +34,13 @@ class Dvd
         return $this->price;
     }
 
-    public function getSize(): int
-    {
-        return $this->size;
-    }
-
     public function getId(): int
     {
         return $this->id;
     }
 
+    public function getSize(): int
+    {
+        return $this->size;
+    }
 }

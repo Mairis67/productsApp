@@ -38,6 +38,51 @@
 <br><br>
 {% endfor %}
 
+{% for book in books %}
+<input type="checkbox" class="delete-checkbox" name="delete-checkbox">
+<ul>
+    <li>
+        {{ book.sku }}
+    </li>
+    <li>
+        {{ book.name }}
+    </li>
+    <li>
+        {{ book.price }} $
+    </li>
+    <li>
+        Weight: {{ book.weight }} KG
+    </li>
+</ul>
+<br><br>
+{% endfor %}
+
+{% for furniture in furnitures %}
+<input type="checkbox" class="delete-checkbox" name="delete-checkbox">
+<ul>
+    <li>
+        {{ furniture.sku }}
+    </li>
+    <li>
+        {{ furniture.name }}
+    </li>
+    <li>
+        {{ furniture.price }} $
+    </li>
+    <li>
+        Height: {{ furniture.height }} CM
+    </li>
+    <li>
+        Width: {{ furniture.width }} CM
+    </li>
+    <li>
+        Length: {{ furniture.length }} CM
+    </li>
+</ul>
+<br><br>
+{% endfor %}
+
+
 <footer class="footer">
     <h5>Scandiweb Test assignment</h5>
 </footer>
