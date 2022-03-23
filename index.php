@@ -11,7 +11,7 @@ require_once 'vendor/autoload.php';
 
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
-    // Products List
+    // Product List
     $r->addRoute('GET', '/', [ProductsListController::class, 'list']);
 
     // Add

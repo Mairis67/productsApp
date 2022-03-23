@@ -19,7 +19,7 @@ class ProductsAddController
         if($_POST['size']) {
             Database::connection()
                 ->insert('dvd', [
-                    'id' => $_POST['id'],
+//                    'id' => $_POST['id'],
                     'sku' => $_POST['sku'],
                     'name' => $_POST['name'],
                     'price' => $_POST['price'],
@@ -28,7 +28,7 @@ class ProductsAddController
         } elseif ($_POST['weight']) {
             Database::connection()
                 ->insert('books', [
-                    'id' => $_POST['id'],
+//                    'id' => $_POST['id'],
                     'sku' => $_POST['sku'],
                     'name' => $_POST['name'],
                     'price' => $_POST['price'],
@@ -37,7 +37,7 @@ class ProductsAddController
         } elseif($_POST['height'] && $_POST['width'] && $_POST['length']) {
             Database::connection()
                 ->insert('furniture', [
-                    'id' => $_POST['id'],
+//                    'id' => $_POST['id'],
                     'sku' => $_POST['sku'],
                     'name' => $_POST['name'],
                     'price' => $_POST['price'],
